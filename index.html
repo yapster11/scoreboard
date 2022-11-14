@@ -1,0 +1,41 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 id="home-txt">HOME</h3>
+                <p id="home-score">0</p>
+                <button id="home-plus-one" onclick="addOneHome()">+1</button>
+                <button id="home-plus-two" onclick="addTwoHome()">+2</button>
+                <button id="home-plus-three" onclick="addThreeHome()">+3</button>
+            </div>
+            <div>
+                <h3 id="away-txt">GUEST</h3>
+                <p id="away-score">0</p>
+                <button id="away-plus-one" onclick="addOneAway()">+1</button>
+                <button id="away-plus-two" onclick="addTwoAway()">+2</button>
+                <button id="away-plus-three" onclick="addThreeAway()">+3</button>
+            </div>
+        </div>
+        <div>
+            <p class="quarter-txt" id="qrt-txt">Quarter: </p>
+        </div>
+        <div class="quarters">
+
+            <button id="first-btn" onclick="firstQrt()">1st</button>
+            <button id="second-btn" onclick="secondQrt()">2nd</button>
+            <button id="third-btn" onclick="thirdQrt()">3rd</button>
+            <button id="fourth-btn" onclick="fourthQrt()">4th</button>
+            <button id="overtime-btn" onclick="overtime()">OVERTIME</button>  
+        </div>
+        <div class="clear">
+            <button id="clear-btn" onclick="clearAll()">CLEAR</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
